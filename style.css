@@ -4,11 +4,13 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    display: flex; 
     background-color: #f9f2ec;
-    text-align: center;
+    align-items: center;
     padding: 5px 0; /* Reduce vertical padding */
-    height: fit-content; /* Set a smaller, fixed height */    z-index: 1000; /* Ensure it's above other content if needed */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    height: 40px;    
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* shadow for style */
 }
 header h2 {color: #88562b;
         padding-bottom: 0; 
@@ -19,11 +21,63 @@ header h2 {color: #88562b;
 }
 header  p{color: #88562b;
     padding: 0; 
-    margin: 0; /* Remove default margin */
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 5px;
     line-height: 1; /* Ensure minimal space between lines */
 }
+.title-and-slogan{
+    position: absolute;
+    text-align: center; /* Align the text to the center */
+    left: 50%;
+    flex-direction: column; /* Stack the items vertically */
+    transform: translateX(-50%);
+    text-align: center;
+}
 
+.icons {
+    position: absolute;
+    right: 20px; /* Keep icons at the far right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; /* Space between multiple icons if necessary */
+    color: #533316;
+    font-size: 20px;
+  }
 
+  .icons i:hover {
+    background-color: #88562b;
+    color: #f9f2ec;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+.menu-bar{
+    background-color: #f9f2ec;
+    width: 100%;
+    height: 50px; 
+    position: fixed; /* Keeps the menu bar fixed at a specific point */
+    top: 45px; /* Placed directly under the header */
+    left: 0; 
+    display: flex; /* Allows the menu links to align side by side */
+    justify-content: center; /* Center menu items horizontally */
+    align-items: center;
+    z-index: 999; /* Stays visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
+
+}
+.menu-bar p2{color: #533316;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: color 0.3s ease;
+
+}
+.menu-bar p2:hover {
+    background-color: #88562b;
+    color: #f9f2ec;
+}
 
 
 
@@ -100,12 +154,17 @@ footer{
     z-index: 1000;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-footer h4{color: #88562b;}
-footer p{color: #88562b;}
+footer h4{color: #88562b;
+        padding-bottom: 0; 
+        margin: 0; }
+footer p{color: #88562b;
+    padding: 0; 
+    margin: 0; }
 
 .contact-details{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 5px;
 }
