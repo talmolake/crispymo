@@ -1,0 +1,111 @@
+/* Header styles */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f2ec;
+    text-align: center;
+    padding: 5px 0; /* Reduce vertical padding */
+    height: fit-content; /* Set a smaller, fixed height */    z-index: 1000; /* Ensure it's above other content if needed */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+header h2 {color: #88562b;
+        padding-bottom: 0; 
+        margin-bottom: 0; 
+        margin-top: 1px;
+        line-height: 1; /* Ensure minimal space between lines */
+
+}
+header  p{color: #88562b;
+    padding: 0; 
+    margin: 0; /* Remove default margin */
+    line-height: 1; /* Ensure minimal space between lines */
+}
+
+
+
+
+
+/* Body styles */
+body{
+    background-color: #edd7c5;
+    margin-top: 10px;
+    padding-top: 10px; /* Adjusted to the header's height */
+    padding-bottom: 60px; /* Adjusted to the footer's height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure body stretches at least the full height of the viewport */
+
+}
+
+.paymentDetails{
+    justify-content: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f2ec;
+    border-radius: 5px;
+    align-self: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  input[type="confirm"] {
+    background-color: #88562b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #4e3118;
+  }
+
+
+
+
+/* Footer styles */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f9f2ec;
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    line-height: 30px;
+    height: fit-content;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer h4{color: #88562b;}
+footer p{color: #88562b;}
+
+.contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
