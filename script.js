@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Load the header dynamically
-    fetch('index.html') // Fetch the content from index.html
+    fetch('base.html') // Fetch the content from index.html
         .then(response => response.text())
         .then(data => {
             // Inject content into the header

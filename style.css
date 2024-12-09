@@ -34,6 +34,9 @@ header  p{color: #88562b;
     text-align: center;
 }
 
+.title-and-slogan a{
+    text-decoration: none;
+}
 .icons {
     position: absolute;
     right: 20px; /* Keep icons at the far right */
@@ -45,7 +48,10 @@ header  p{color: #88562b;
     font-size: 20px;
   }
 
-  .icons i:hover {
+.icons a{color: #533316;
+
+}
+  .icons a:hover {
     background-color: #88562b;
     color: #f9f2ec;
     padding: 10px;
@@ -67,14 +73,14 @@ header  p{color: #88562b;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
 
 }
-.menu-bar p2{color: #533316;
+.menu-bar a{color: #533316;
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
     transition: color 0.3s ease;
 
 }
-.menu-bar p2:hover {
+.menu-bar a:hover {
     background-color: #88562b;
     color: #f9f2ec;
 }
